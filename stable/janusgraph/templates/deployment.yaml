@@ -41,7 +41,7 @@ spec:
             exec:
               command:
                 - /tmp/healthcheck.py
-            initialDelaySeconds: 10
+            initialDelaySeconds: 20
           resources:
 {{ toYaml .Values.resources | indent 12 }}
       volumes:
